@@ -59,7 +59,7 @@ Model: Qwen2.5-0.5B-Instruct on CPU, temperature 0.8, top-p 0.95, γ = 0.5, cont
 ## Project layout
 
 ```text
-llm-watermark/
+Minor_Project/
 ├── config.py          # all parameters: model, key, γ, δ, context width, sampling, threshold
 ├── watermark.py       # context_seed, get_green_list, get_green_mask, apply_watermark
 ├── generate.py        # custom batched KV-cache generation loop + CLI
@@ -87,7 +87,7 @@ llm-watermark/
 
 ```bash
 git clone https://github.com/anishtoppo55/Minor_Project.git
-cd Minor_Project/llm-watermark
+cd Minor_Project
 
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate

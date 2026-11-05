@@ -255,7 +255,7 @@ This is the core trade-off:
 ## 8. Reproduce
 
 ```bash
-cd llm-watermark
+cd Minor_Project
 python -m pytest -q tests
 python evaluate.py baseline --num-prompts 20 --seeds 5
 python evaluate.py delta  --num-prompts 10 --seeds 3
