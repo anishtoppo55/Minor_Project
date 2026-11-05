@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Never commit the real watermark key
+.env
+
+# Generated text (can be large)
+outputs/**/*.jsonl

@@ -1,0 +1,33 @@
+/home/anish/.local/lib/python3.10/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+Loading Qwen/Qwen2.5-0.5B-Instruct on cpu ...
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 125/290 [00:00<00:00, 1197.21it/s]Loading weights:  92%|█████████▏| 267/290 [00:00<00:00, 1319.74it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1164.07it/s]
+
+##### Baseline: normal vs watermarked #####
+  normal seed#0 prompts 0-9: 1944 tokens in 87.7s
+  normal seed#0 prompts 10-19: 1976 tokens in 88.2s
+  normal seed#1 prompts 0-9: 1897 tokens in 89.1s
+  normal seed#1 prompts 10-19: 1982 tokens in 87.7s
+  normal seed#2 prompts 0-9: 1877 tokens in 87.7s
+  normal seed#2 prompts 10-19: 2000 tokens in 87.8s
+  normal seed#3 prompts 0-9: 1828 tokens in 86.8s
+  normal seed#3 prompts 10-19: 1910 tokens in 87.7s
+  normal seed#4 prompts 0-9: 1930 tokens in 87.6s
+  normal seed#4 prompts 10-19: 2000 tokens in 87.8s
+  wm(delta=1.0, gamma=0.5) seed#0 prompts 0-9: 1935 tokens in 93.2s
+  wm(delta=1.0, gamma=0.5) seed#0 prompts 10-19: 1910 tokens in 93.2s
+  wm(delta=1.0, gamma=0.5) seed#1 prompts 0-9: 1969 tokens in 92.9s
+  wm(delta=1.0, gamma=0.5) seed#1 prompts 10-19: 1947 tokens in 93.3s
+  wm(delta=1.0, gamma=0.5) seed#2 prompts 0-9: 1898 tokens in 92.9s
+  wm(delta=1.0, gamma=0.5) seed#2 prompts 10-19: 2000 tokens in 93.3s
+  wm(delta=1.0, gamma=0.5) seed#3 prompts 0-9: 1887 tokens in 93.0s
+  wm(delta=1.0, gamma=0.5) seed#3 prompts 10-19: 1912 tokens in 94.2s
+  wm(delta=1.0, gamma=0.5) seed#4 prompts 0-9: 1892 tokens in 93.1s
+  wm(delta=1.0, gamma=0.5) seed#4 prompts 10-19: 1821 tokens in 92.0s
+
+=== baseline summary ===
+  condition   n  mean_tokens  mean_green_ratio  mean_z  std_z  median_z  detection_rate  mean_ppl  median_ppl  mean_rep3
+     normal 100       189.44             0.500   0.027  1.038     0.143            0.00     2.161       2.203      0.074
+watermarked 100       187.71             0.609   3.007  1.236     2.865            0.19     2.315       2.286      0.065
+
+Done in 35.5 min. Results in /media/anish/HDD PART 1/backup/Anish Backup/college/7 Sem/Minor_7/llm-watermark/experiments

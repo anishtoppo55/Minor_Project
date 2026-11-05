@@ -1,0 +1,42 @@
+/home/anish/.local/lib/python3.10/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+Loading Qwen/Qwen2.5-0.5B-Instruct on cpu ...
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:21,  3.56it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 819.01it/s]
+
+##### Delta sweep #####
+  normal seed#0 prompts 0-9: 1944 tokens in 84.1s
+  normal seed#1 prompts 0-9: 1897 tokens in 82.1s
+  normal seed#2 prompts 0-9: 1877 tokens in 82.2s
+  wm(delta=0.5, gamma=0.5) seed#0 prompts 0-9: 1832 tokens in 86.9s
+  wm(delta=0.5, gamma=0.5) seed#1 prompts 0-9: 1926 tokens in 87.1s
+  wm(delta=0.5, gamma=0.5) seed#2 prompts 0-9: 1891 tokens in 87.2s
+  wm(delta=1.0, gamma=0.5) seed#0 prompts 0-9: 1935 tokens in 87.0s
+  wm(delta=1.0, gamma=0.5) seed#1 prompts 0-9: 1969 tokens in 87.1s
+  wm(delta=1.0, gamma=0.5) seed#2 prompts 0-9: 1898 tokens in 89.8s
+  wm(delta=1.5, gamma=0.5) seed#0 prompts 0-9: 1829 tokens in 91.4s
+  wm(delta=1.5, gamma=0.5) seed#1 prompts 0-9: 1951 tokens in 91.9s
+  wm(delta=1.5, gamma=0.5) seed#2 prompts 0-9: 1802 tokens in 91.6s
+  wm(delta=2.0, gamma=0.5) seed#0 prompts 0-9: 1784 tokens in 91.4s
+  wm(delta=2.0, gamma=0.5) seed#1 prompts 0-9: 1945 tokens in 92.0s
+  wm(delta=2.0, gamma=0.5) seed#2 prompts 0-9: 1880 tokens in 91.7s
+  wm(delta=2.5, gamma=0.5) seed#0 prompts 0-9: 1868 tokens in 91.3s
+  wm(delta=2.5, gamma=0.5) seed#1 prompts 0-9: 1918 tokens in 91.9s
+  wm(delta=2.5, gamma=0.5) seed#2 prompts 0-9: 1964 tokens in 92.0s
+
+=== delta summary ===
+ watermarked  delta  n  mean_tokens  mean_green_ratio  mean_z  std_z  median_z  detection_rate  mean_ppl  median_ppl  mean_rep3
+       False    0.0 30      186.600             0.497  -0.072  1.041     0.000           0.000     2.063       2.049      0.067
+        True    0.5 30      184.300             0.554   1.452  0.868     1.649           0.000     2.165       2.169      0.059
+        True    1.0 30      189.400             0.622   3.348  1.263     3.000           0.267     2.232       2.199      0.052
+        True    1.5 30      182.067             0.665   4.430  0.938     4.356           0.733     2.469       2.422      0.052
+        True    2.0 30      182.933             0.722   6.017  1.351     6.143           0.933     2.592       2.630      0.053
+        True    2.5 30      187.667             0.755   6.984  1.395     7.000           0.967     2.902       2.864      0.046
+
+Baseline table:
+ delta  normal_mean_z  watermarked_mean_z  detection_rate  fpr  normal_ppl  watermarked_ppl
+   0.5         -0.072               1.452           0.000  0.0       2.063            2.165
+   1.0         -0.072               3.348           0.267  0.0       2.063            2.232
+   1.5         -0.072               4.430           0.733  0.0       2.063            2.469
+   2.0         -0.072               6.017           0.933  0.0       2.063            2.592
+   2.5         -0.072               6.984           0.967  0.0       2.063            2.902
+Done in 31.3 min. Results in /media/anish/HDD PART 1/backup/Anish Backup/college/7 Sem/Minor_7/llm-watermark/experiments

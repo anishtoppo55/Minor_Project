@@ -1,0 +1,27 @@
+/home/anish/.local/lib/python3.10/site-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+Loading Qwen/Qwen2.5-0.5B-Instruct on cpu ...
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  47%|████▋     | 136/290 [00:00<00:00, 1341.38it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1544.29it/s]
+
+##### Length sweep #####
+  normal seed#0 prompts 0-9: 4000 tokens in 187.2s
+  normal seed#1 prompts 0-9: 4000 tokens in 181.8s
+  normal seed#2 prompts 0-9: 4000 tokens in 181.6s
+  wm(delta=1.0, gamma=0.5) seed#0 prompts 0-9: 4000 tokens in 193.4s
+  wm(delta=1.0, gamma=0.5) seed#1 prompts 0-9: 4000 tokens in 192.7s
+  wm(delta=1.0, gamma=0.5) seed#2 prompts 0-9: 4000 tokens in 193.4s
+
+=== length summary ===
+ watermarked  length_limit  n  mean_tokens  mean_green_ratio  mean_z  std_z  median_z  detection_rate  mean_ppl  median_ppl  mean_rep3
+       False            25 30       21.000             0.508   0.073  1.131     0.218             0.0     2.197       2.170      0.136
+       False            50 30       46.000             0.512   0.157  1.069     0.000             0.0     2.197       2.170      0.136
+       False           100 30       96.000             0.502   0.034  0.977     0.204             0.0     2.197       2.170      0.136
+       False           200 30      196.000             0.497  -0.071  1.108     0.071             0.0     2.197       2.170      0.136
+       False           400 30      395.967             0.498  -0.089  1.208     0.000             0.0     2.197       2.170      0.136
+        True            25 30       21.000             0.646   1.338  1.036     1.309             0.0     2.378       2.368      0.124
+        True            50 30       46.000             0.641   1.917  1.067     2.212             0.0     2.378       2.368      0.124
+        True           100 30       96.000             0.632   2.579  1.168     2.756             0.1     2.378       2.368      0.124
+        True           200 30      196.000             0.623   3.438  1.233     3.214             0.3     2.378       2.368      0.124
+        True           400 30      396.000             0.620   4.764  1.406     4.623             0.7     2.378       2.368      0.124
+
+Done in 22.0 min. Results in /media/anish/HDD PART 1/backup/Anish Backup/college/7 Sem/Minor_7/llm-watermark/experiments

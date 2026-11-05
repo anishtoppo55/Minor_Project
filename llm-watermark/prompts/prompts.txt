@@ -1,0 +1,20 @@
+Explain how photosynthesis works.
+Explain the concept of gradient descent.
+Write a short paragraph about renewable energy.
+Explain why regularization is useful in machine learning.
+Describe the difference between supervised and unsupervised learning.
+Explain how a database index works.
+Write a short article about climate change.
+Explain the attention mechanism in transformers.
+Describe how GPS works.
+Explain the concept of probability.
+Explain how vaccines train the immune system.
+Describe the water cycle.
+Explain how public-key cryptography works.
+Write a short essay about the history of the printing press.
+Explain what inflation is and why it happens.
+Describe how a compiler turns source code into machine code.
+Explain the theory of plate tectonics.
+Write a short article about the importance of sleep.
+Explain how neural networks learn from data.
+Describe how the internet routes data between computers.

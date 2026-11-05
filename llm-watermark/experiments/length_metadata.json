@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-09-29 02:54:06",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "model_dtype": "torch.float32",
+  "vocab_size": 151936,
+  "python": "3.10.12",
+  "torch": "2.10.0+cpu",
+  "transformers": "5.5.4",
+  "numpy": "2.2.6",
+  "hardware": "x86_64",
+  "device": "cpu",
+  "cuda": null,
+  "experiment_seed": 42,
+  "secret_key": "<redacted>",
+  "watermark": {
+    "green_fraction": 0.5,
+    "delta": 1.0,
+    "context_width": 4,
+    "z_threshold": 4.0
+  },
+  "generation": {
+    "max_new_tokens": 400,
+    "min_new_tokens": 400,
+    "temperature": 0.8,
+    "top_p": 0.95
+  },
+  "cli_args": {
+    "experiment": "length",
+    "num_prompts": 10,
+    "seeds": 3,
+    "batch_size": 10,
+    "max_new_tokens": 200,
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "delta": 1.0,
+    "gamma": 0.5,
+    "context_width": 4,
+    "threshold": 4.0,
+    "deltas": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5
+    ],
+    "gammas": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "lengths": [
+      25,
+      50,
+      100,
+      200,
+      400
+    ],
+    "no_ppl": false
+  }
+}
